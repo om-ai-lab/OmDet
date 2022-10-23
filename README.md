@@ -1,7 +1,8 @@
-# OmDet
-Object Detection with Vision-Language Pre-training
+# OmDet: Object Detection with Vision-Language Pre-training
 
-This is offcial repo for "[OmDet: Language-Aware Object Detection with Large-scale Vision-Language Multi-dataset Pre-training](https://arxiv.org/abs/2209.05946)". The code will be released after internal review. 
+This is offcial repo for "[OmDet: Language-Aware Object Detection with Large-scale Vision-Language Multi-dataset Pre-training](https://arxiv.org/abs/2209.05946)". 
+
+The code will be released after internal review. 
 
 You may cite this work as following:
 
