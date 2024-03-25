@@ -83,3 +83,13 @@ Please consider citing our papers if you use our projects:
   year={2024}
 }
 ```
+
+```
+@article{zhao2024omdet,
+  title={OmDet: Large-scale vision-language multi-dataset pre-training with multimodal detection network},
+  author={Zhao, Tiancheng and Liu, Peng and Lee, Kyusong},
+  journal={IET Computer Vision},
+  year={2024},
+  publisher={Wiley Online Library}
+}
+```
