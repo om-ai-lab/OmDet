@@ -1,7 +1,7 @@
 # OmDet-Turbo
 
 <p align="center">
- <a href="https://arxiv.org/abs/2403.06892"><strong> [Paper 📄] </strong></a> <a href=https://arxiv.org/abs/2403.06892"><strong> [Model 🗂️] </strong></a>
+ <a href="https://arxiv.org/abs/2403.06892"><strong> [Paper 📄] </strong></a> <a href="https://huggingface.co/omlab/OmDet-Turbo_tiny_SWIN_T"><strong> [Model 🗂️] </strong></a>
 </p>
 <p align="center">
 Fast and accurate open-vocabulary end-to-end object detection
