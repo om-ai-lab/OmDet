@@ -1,0 +1,80 @@
+MODEL:
+  META_ARCHITECTURE: OmDetV2Turbo
+  DEPLOY_MODE: true
+  SWIN:
+    OUT_FEATURES:
+      - 1
+      - 2
+      - 3
+    SIZE: T
+    USE_CHECKPOINT: false
+  BACKBONE:
+    NAME: build_swintransformer_backbone
+  LANGUAGE_BACKBONE:
+    MODEL_TYPE: "clip"
+    LANG_DIM: 512
+  DEVICE: cuda
+  FUSE_TYPE: merged_attn
+  TRANSFORMER_DECODER: ELADecoder
+  TRANSFORMER_ENCODER: ELAEncoder
+  HEAD: DINOHead
+  ELAEncoder:
+    act: gelu
+    depth_mult: 1.0
+    dim_feedforward: 2048
+    encoder_layer: TransformerLayer
+    eval_size: null
+    expansion: 1.0
+    feat_strides:
+    - 8
+    - 16
+    - 32
+    hidden_dim: 256
+    in_channels:
+    - 192
+    - 384
+    - 768
+    num_encoder_layers: 1
+    pe_temperature: 10000
+    use_encoder_idx:
+    - 2
+  PIXEL_MEAN:
+  - 123.675
+  - 116.28
+  - 103.53
+  PIXEL_STD:
+  - 58.395
+  - 57.12
+  - 57.375
+  ELADecoder:
+    activation: relu
+    backbone_feat_channels:
+    - 256
+    - 256
+    - 256
+    box_noise_scale: 1.0
+    cls_type: cosine
+    dim_feedforward: 2048
+    dropout: 0.0
+    eps: 0.01
+    eval_idx: -1
+    eval_size: null
+    feat_strides:
+    - 8
+    - 16
+    - 32
+    hidden_dim: 256
+    label_noise_ratio: 0.5
+    learnt_init_query: false
+    nhead: 8
+    num_decoder_layers: 6
+    num_decoder_points: 4
+    num_denoising: 100
+    num_levels: 3
+    num_queries: 900
+    position_embed_type: sine
+  WEIGHTS: resources/swin_tiny_patch4_window7_224.pkl
+INPUT:
+  FORMAT: RGB
+  MAX_SIZE_TEST: 640
+  MIN_SIZE_TEST: 640
