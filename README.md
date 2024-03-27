@@ -16,7 +16,8 @@ Fast and accurate open-vocabulary end-to-end object detection
 ## 🔗 Related Works
 If you are interested in our research, we welcome you to explore our other wonderful projects.
 
-🔆 [How to Evaluate the Generalization of Detection? A Benchmark for Comprehensive Open-Vocabulary Detection](https://arxiv.org/abs/2308.13177)(AAAI24)
+🔆 [How to Evaluate the Generalization of Detection? A Benchmark for Comprehensive Open-Vocabulary Detection](https://arxiv.org/abs/2308.13177)(AAAI24)  
+&nbsp;&nbsp;&nbsp;&nbsp;🏠[Github Repository](https://github.com/om-ai-lab/OVDEval/tree/main)
 
 🔆 [OmDet: Large-scale vision-language multi-dataset pre-training with multimodal detection network](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cvi2.12268)(IET Computer Vision)
 
