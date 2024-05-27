@@ -10,7 +10,7 @@ Fast and accurate open-vocabulary end-to-end object detection
 ***
 ## 🗓️ Updates
 * 03/25/2024: Inference code and a pretrained OmDet-Turbo-Tiny model released.
-* 03/12/2024: Github open-source project creted
+* 03/12/2024: Github open-source project created
 
 ***
 ## 🔗 Related Works
