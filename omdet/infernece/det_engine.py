@@ -62,6 +62,8 @@ class DetEngine(BaseEngine):
 
         model, cfg = self._load_model(model_id)
 
+        print("Type of model:", type(model))
+
         resp = []
         flat_labels = labels
 
