@@ -26,9 +26,11 @@ from detectron2.modeling.meta_arch.build import META_ARCH_REGISTRY
 
 from ..utils.cache import LRUCache
 
+from huggingface_hub import PyTorchModelHubMixin
+
 
 @META_ARCH_REGISTRY.register()
-class OmDetV2Turbo(nn.Module):
+class OmDetV2Turbo(nn.Module, PyTorchModelHubMixin):
 
     @configurable
     def __init__(self, cfg):
