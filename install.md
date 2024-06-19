@@ -14,7 +14,7 @@
   conda activate omdet
   ```
 
-* Pytorch>=2.1.0, Torchvision>=0.17.1
+* Pytorch>=2.1.0, Torchvision>=0.16.0
   
   If your CUDA version is 11.8, you can install Pytorch as following:
   ```bash
