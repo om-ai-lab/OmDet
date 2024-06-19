@@ -18,7 +18,7 @@
   
   If your CUDA version is 11.8, you can install Pytorch as following:
   ```bash
-  conda install pytorch==2.1.0 torchvision==0.17.1 pytorch-cuda=11.8 -c pytorch -c nvidia
+  conda install pytorch==2.1.0 torchvision==0.16.0 pytorch-cuda=11.8 -c pytorch -c nvidia
   ```
 
 * detectron2>=0.6.0:
