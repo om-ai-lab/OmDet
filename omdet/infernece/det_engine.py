@@ -93,3 +93,20 @@ class DetEngine(BaseEngine):
                     resp.append(temp)
 
         return resp
+
+    def export_onnx(self, model_id, img_tensor, label_feats, task_feats, task_mask, onnx_model_path):
+
+        model, _ = self._load_model(model_id)
+        model.to("cpu")
+        model.eval()
+        inputs = (img_tensor, label_feats, task_feats, task_mask)
+
+        print("start cvt onnx...")
+        torch.onnx.export(model,  # model being run
+                          inputs,  # model input (or a tuple for multiple inputs)
+                          onnx_model_path,  # where to save the model (can be a file or file-like object)
+                          export_params=True,  # store the trained parameter weights inside the model file
+                          opset_version=17,  # the ONNX version to export the model to
+                          do_constant_folding=True,  # whether to execute constant folding for optimization
+                          input_names=['img_tensor', "label_feats", "task_feats", "task_feats"],
+                          )

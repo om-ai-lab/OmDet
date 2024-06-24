@@ -59,6 +59,14 @@ We already added language cache while inferring with **run_demo.py**. For more d
 
 
 ***
+## ⚙️ How To Export ONNX Model
+1. Replace **OmDetV2Turbo** in **OmDet-Turbo_tiny_SWIN_T.yaml** with **OmDetV2TurboInfer**
+2. Run **export.py**, and the omdet.onnx will be exported.
+   
+In the above example, post processing is not included in onnx model , and all input size are fixed. You can add more post processing and change the input size according to your needs.
+
+
+***
 ## 📦 Model Zoo
 The performance of COCO and LVIS are evaluated under zero-shot setting.
 

@@ -3,5 +3,6 @@ from .detector import OmDetV2Turbo
 from .ela_encoder import ELAEncoder
 from .ela_decoder import ELADecoder
 from .head import DINOHead
+from .infer_model import OmDetV2TurboInfer
 
 
