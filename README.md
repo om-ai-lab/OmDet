@@ -9,6 +9,7 @@ Fast and accurate open-vocabulary end-to-end object detection
 
 ***
 ## 🗓️ Updates
+* 06/24/2024: Guidance for [converting OmDet-Turbo to ONNX](https://github.com/om-ai-lab/OmDet#:~:text=How%20To%20Export%20ONNX%20Model)
 * 03/25/2024: Inference code and a pretrained OmDet-Turbo-Tiny model released.
 * 03/12/2024: Github open-source project created
 
