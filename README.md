@@ -79,12 +79,6 @@ OmDet-Turbo-Tiny| Swin-T | O365,GoldG | 42.5 | 30.3 | 21.5/140.0 |  [weight](htt
 ## 📝 Main Results
 <img src="docs/main_results.png" alt="main_result" width="100%">
 
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=om-ai-lab/OmDet&type=Date)](https://star-history.com/#om-ai-lab/OmDet&Date)
-
-
 ***
 ## Citation
 Please consider citing our papers if you use our projects:
