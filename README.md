@@ -52,9 +52,14 @@ Follow the [Installation Instructions](install.md) to set up the environments fo
 
 ***
 ## 🚀 How To Run
+### Local Inference
 1. Download our pretrained model and the [CLIP](https://huggingface.co/omlab/OmDet-Turbo_tiny_SWIN_T/resolve/main/ViT-B-16.pt?download=true) checkpoints.
 2. Create a folder named **resources**, put downloaded models into this folder.
 3. Run **run_demo.py**, the images with predicted results will be saved at **./outputs** folder.
+### Run as a API Server
+1. Download our pretrained model and the [CLIP](https://huggingface.co/omlab/OmDet-Turbo_tiny_SWIN_T/resolve/main/ViT-B-16.pt?download=true) checkpoints.
+2. Create a folder named **resources**, put downloaded models into this folder.
+3. Run **run_wsgi.py**, the API server will be started at **http://host_ip:8000/inf_predict**, check **http://host_ip:8000/docs** to have a try.
 
 We already added language cache while inferring with **run_demo.py**. For more details, please open and check **run_demo.py** scripts. 
 

@@ -1,6 +1,6 @@
 import os
 
-from omdet.infernece.det_engine import DetEngine
+from omdet.inference.det_engine import DetEngine
 from omdet.utils.plots import Annotator
 from PIL import Image
 import numpy as np
