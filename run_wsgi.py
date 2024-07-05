@@ -10,7 +10,7 @@ class InfDetectBody(BaseModel):
     model_id: str
     data: List[str]
     src_type: str = "url"
-    task: Union[str, List]  # {key: embedding, ....}
+    task: str
     labels: List[str]
     threshold: float = 0.1
     nms_threshold: float = 0.5
@@ -57,9 +57,9 @@ async def detect_urls(
         nms_threshold=body.nms_threshold,
     )
 
-    resp = DetectionRes(took=(time.time() - s_time) * 1000, objects=out)
+    resp = DetectionRes(took=int((time.time() - s_time) * 1000), objects=out)
     return resp
 
 
 if __name__ == "__main__":
-    uvicorn.run("wsgi:app", host="0.0.0.0", port=8000)
+    uvicorn.run("run_wsgi:app", host="0.0.0.0", port=8000)
