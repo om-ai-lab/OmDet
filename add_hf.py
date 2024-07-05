@@ -1,4 +1,4 @@
-from omdet.infernece.det_engine import DetEngine
+from omdet.inference.det_engine import DetEngine
 from omdet.omdet_v2_turbo.detector import OmDetV2Turbo
 
 

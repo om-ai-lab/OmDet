@@ -6,7 +6,7 @@ from detectron2.checkpoint import DetectionCheckpointer
 from detectron2.config import get_cfg
 from detectron2.engine import DefaultTrainer as Trainer
 from omdet.utils.cache import LRUCache
-from omdet.infernece.base_engine import BaseEngine
+from omdet.inference.base_engine import BaseEngine
 from detectron2.utils.logger import setup_logger
 from omdet.omdet_v2_turbo.config import add_omdet_v2_turbo_config
 

@@ -1,4 +1,4 @@
-from omdet.infernece.det_engine import DetEngine
+from omdet.inference.det_engine import DetEngine
 import torch
 
 if __name__ == "__main__":
