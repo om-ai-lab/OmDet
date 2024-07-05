@@ -9,6 +9,7 @@ Fast and accurate open-vocabulary end-to-end object detection
 
 ***
 ## 🗓️ Updates
+* 07/05/2024: Our new open-source project, [OmAget: A multimodal agent framework for solving complex tasks](https://github.com/om-ai-lab/OmAgent) is available !!! Additionally, OmDet has been seamlessly integrated as an OVD tool within it. Feel free to delve into our innovative multimodal agent framework. 
 * 06/24/2024: Guidance for [converting OmDet-Turbo to ONNX](https://github.com/om-ai-lab/OmDet#:~:text=How%20To%20Export%20ONNX%20Model)
 * 03/25/2024: Inference code and a pretrained OmDet-Turbo-Tiny model released.
 * 03/12/2024: Github open-source project created
