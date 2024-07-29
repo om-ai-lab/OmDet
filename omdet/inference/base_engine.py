@@ -38,6 +38,12 @@ class BaseEngine(object):
                 temp = Image.open(io.BytesIO(requests.get(x).content))
                 image_data.append(temp)
 
+        elif src_type == "base64":
+            image_data = []
+            for x in data:
+                temp = Image.open(io.BytesIO(base64.b64decode(x))).convert("RGB")
+                image_data.append(temp)
+
         else:
             raise Exception("Unknown mode {}.".format(src_type))
 

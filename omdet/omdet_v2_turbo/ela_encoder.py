@@ -24,7 +24,7 @@ class TransformerLayer(nn.Module):
         act_dropout = dropout if act_dropout is None else act_dropout
         self.normalize_before = normalize_before
 
-        self.self_attn = torch.nn.MultiheadAttention(d_model, nhead, attn_dropout)
+        self.self_attn = torch.nn.MultiheadAttention(d_model, nhead, attn_dropout, batch_first=True)
         # Implementation of Feedforward model
         self.linear1 = nn.Linear(d_model, dim_feedforward)
         self.dropout = nn.Dropout(act_dropout)
