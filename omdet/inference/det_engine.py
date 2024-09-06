@@ -108,5 +108,5 @@ class DetEngine(BaseEngine):
                           export_params=True,  # store the trained parameter weights inside the model file
                           opset_version=17,  # the ONNX version to export the model to
                           do_constant_folding=True,  # whether to execute constant folding for optimization
-                          input_names=['img_tensor', "label_feats", "task_feats", "task_feats"],
+                          input_names=['img_tensor', "label_feats", "task_feats", "task_mask"],
                           )
