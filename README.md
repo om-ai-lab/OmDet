@@ -9,6 +9,7 @@ Fast and accurate open-vocabulary end-to-end object detection
 
 ***
 ## 🗓️ Updates
+* 09/26/2024：OmDet-Turbo has been integrated into Transformers version 4.45.0. The code is available at [here](https://github.com/huggingface/transformers/tree/main/src/transformers/models/omdet_turbo), and the Hugging Face model is available at [here](https://huggingface.co/omlab/omdet-turbo-swin-tiny-hf).
 * 07/05/2024: Our new open-source project, [OmAget: A multimodal agent framework for solving complex tasks](https://github.com/om-ai-lab/OmAgent) is available !!! Additionally, OmDet has been seamlessly integrated as an OVD tool within it. Feel free to delve into our innovative multimodal agent framework. 
 * 06/24/2024: Guidance for [converting OmDet-Turbo to ONNX](https://github.com/om-ai-lab/OmDet#:~:text=How%20To%20Export%20ONNX%20Model)
 * 03/25/2024: Inference code and a pretrained OmDet-Turbo-Tiny model released.
